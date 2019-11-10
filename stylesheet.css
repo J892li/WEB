@@ -496,7 +496,7 @@ background-size: contain
 
 }
      h1 {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
     .container>h1{
         margin-bottom: 400px;
@@ -521,7 +521,7 @@ background-size: contain
 }
 
 .Intro>h4{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     padding-left: 0;
 }
@@ -555,7 +555,7 @@ background-size: contain
     .service>h3:before{
     content: "";
     display: block;
-    width: 100px;
+    width: 80px;
     height: 1.5px;
     position: absolute;
     background: black;
@@ -568,7 +568,7 @@ background-size: contain
 .service>h3:after{
     content: "";
     display: block;
-    width: 100px;
+    width: 80px;
     height: 1.5px;
     position: absolute;
     background: black;
@@ -584,11 +584,22 @@ background-size: cover;
     
 }
 
+    .boxesc {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    line-height: 17px;   
+}
+
+
 .whymebox>h2{  
 float: left;
 width: 450px;
-margin-left: 135px;
-font-size: 24px;
+margin-left: 110px;
+font-size: 20px;
 
 }
 .boxc>h2{
