@@ -9,7 +9,6 @@ body {
 
 
 .navcontainer {
-color:black;
   margin: auto;
   width: 90%;
 }
@@ -140,7 +139,6 @@ p {
 background: #333 url('star2.png');
 background-repeat: no-repeat;
 background-size: cover;
-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,7 +214,7 @@ animation: AnimationName 15s ease-in-out infinite;
 
 .Intro{
     width:500px;
-text-align: center;
+    text-align: center;
    color: whitesmoke;
     padding-left: 35%;
     padding-top: 5%;
@@ -240,7 +238,6 @@ float: right;
 width: 400px;
 padding-right:50px;
 margin-right: 150px;
-margin-bottom: 10px;
 filter: drop-shadow(30px 10px 4px grey);
 
 }
@@ -444,13 +441,16 @@ button.accordion:hover, button.accordion.is-open {
     padding-bottom: 20px;
 }
 
-
-
-
-
-h1, h2 {
-  font-weight: 200;
+#logo1{
+    background-image: url('Ten-logo.png');
+    width: 30;
+    height: 120;
 }
+
+#logo2{
+    background-image: url('nuc-logo.jpg');
+}
+
 
 .footer>h5{
     text-align: center;
@@ -484,6 +484,7 @@ background-size: cover;
     .container>h1{
         margin-top: 200px;
         text-align: center;
+        font-family: 'Anton', sans-serif;
     }
 }
 
@@ -491,7 +492,6 @@ background-size: cover;
 .container {
 height: 500px;
 background: #333 url('star2-2.png');
-background-repeat: no-repeat;
 background-size: contain
 
 }
@@ -514,10 +514,18 @@ background-size: contain
 }
 
 .Intro>h2{
+    font-family: 'Anton', sans-serif;
     font-size: 30px;
     text-align: center;
        padding-left: 0;
 }
+
+.Intro>h4{
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+}
+    
     
     .button {
   border: none;
@@ -572,7 +580,6 @@ background-size: contain
 .Hireme{
 background: url('cube-2.png');
 background-size: cover;
-background-repeat: no-repeat;
 
     
 }
@@ -581,9 +588,14 @@ background-repeat: no-repeat;
 float: left;
 width: 450px;
 margin-left: 135px;
-
+font-size: 24px;
 
 }
+.boxc>h2{
+font-size: 25px;
+font-family: 'Anton', sans-serif;
+}
+
 
 }
 
@@ -594,7 +606,14 @@ margin-left: 135px;
 /* breweries styles */
 
 
-.breweries>button{
+.buttonmore {
+  background-color: transparent;
+  color: whitesmoke; 
+  border: 1px solid #51A8DD;
+  border-radius: 15px;
+  margin-top: 23px;;
+
+}{
     background-color: black;
   text-decoration: none;
   color: white;
@@ -606,10 +625,10 @@ margin-left: 135px;
 
 .breweries > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-gap: 1rem;
  list-style-type: none;
-padding-inline-start: 0;
+ padding-inline-start: 0;
 }
 
 .breweries > ul > li {
@@ -619,7 +638,8 @@ padding-inline-start: 0;
 }
 
 .breweries > ul > li > figure {
-  max-height: 220px;
+  max-height: 200px;
+  max-width: 350px;
   overflow: hidden;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -647,7 +667,7 @@ padding-inline-start: 0;
   font-size: 1rem;
   line-height: 1.5;
   padding: 1rem .75rem;
-  color: #666666;
+  color: black;
 }
 
 
