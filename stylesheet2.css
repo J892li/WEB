@@ -1,3 +1,6 @@
+*{
+font-family: 'Noto Serif SC', serif;
+}
 @light-color: #f5f5f5;
 
 
@@ -624,10 +627,3 @@ font-family: 'Anton', sans-serif;
   padding: 1rem .75rem;
   color: black;
 }
-
-
-
-
-
-
-

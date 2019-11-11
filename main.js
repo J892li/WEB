@@ -82,6 +82,11 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
-function navBarFunction() {
-    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
