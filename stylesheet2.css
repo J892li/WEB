@@ -212,7 +212,7 @@ font-family: 'Caveat', cursive;
 .service>h3:before{
     content: "";
     display: block;
-    width: 500px;
+    width: 200px;
     height: 1.5px;
     position: absolute;
     background: black;
@@ -225,7 +225,7 @@ font-family: 'Caveat', cursive;
 .service>h3:after{
     content: "";
     display: block;
-    width: 500px;
+    width: 200px;
     height: 1.5px;
     position: absolute;
     background: black;
