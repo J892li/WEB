@@ -27,15 +27,18 @@ a:hover {
   position: relative;
   top: 10%;
   text-align:center;
+    color:white;
+    padding-top: 3%;
 }
 
 .Intro>h2{
-    padding-right: 2%;
-    
+
+    font-size: 3rem;
 }
 
+
 .Intro>h4{
-    padding-right: 2%;
+    font-size: 1rem;
 }
 
 p {
@@ -183,7 +186,7 @@ animation: AnimationName 15s ease-in-out infinite;
 .service>h3:before{
     content: "";
     display: block;
-    width: 500px;
+    width: 300px;
     height: 1.5px;
     position: absolute;
     background: black;
@@ -196,7 +199,7 @@ animation: AnimationName 15s ease-in-out infinite;
 .service>h3:after{
     content: "";
     display: block;
-    width: 500px;
+    width: 300px;
     height: 1.5px;
     position: absolute;
     background: black;

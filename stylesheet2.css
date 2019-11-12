@@ -198,7 +198,7 @@ animation: AnimationName 15s ease-in-out infinite;
 .endwords{
     text-align: center;
 font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .service>h3{
@@ -458,27 +458,23 @@ background-image: url(2-2.png);
     }
 
 .Intro{
-    width:380px;
-   text-align: center;
-   color: whitesmoke;
-   padding-left: 0;
-    padding-right: 0;
-    padding-top: 25%;
+  position: relative;
+  top: 10%;
+  text-align:center;
+    color:white;
+    padding-top: 3%;
 }
 
 .Intro>h2{
-    font-family: 'Anton', sans-serif;
-    font-size: 30px;
-    text-align: center;
-       padding-right: 2%;
+
+    font-size: 3rem;
 }
 
+
 .Intro>h4{
-    font-size: 12px;
-    text-align: center;
-    padding-right: 2%;
+    font-size: 1rem;
 }
-    
+ 
     
     .button {
   border: none;
