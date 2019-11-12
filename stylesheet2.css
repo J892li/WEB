@@ -463,20 +463,20 @@ background-image: url(2-2.png);
    color: whitesmoke;
    padding-left: 0;
     padding-right: 0;
-    padding-top: 15%;
+    padding-top: 25%;
 }
 
 .Intro>h2{
     font-family: 'Anton', sans-serif;
     font-size: 30px;
     text-align: center;
-       padding-left: 0;
+       padding-right: 2%;
 }
 
 .Intro>h4{
     font-size: 12px;
     text-align: center;
-    padding-left: 0;
+    padding-right: 2%;
 }
     
     
@@ -545,7 +545,7 @@ background-image: url(2-2.png);
 }
 .endwords{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 
