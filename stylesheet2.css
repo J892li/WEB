@@ -7,10 +7,23 @@ font-family: 'Noto Serif SC', serif;
 body {
   font-weight: 300;
   background-color: white;
-   font-family: 'Heebo', sans-serif;
 }
 
 
+a:link {
+  color: white;
+    text-decoration: none;
+}
+
+a:visited {
+  color:white;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+      text-decoration: underline;
+}
 
 
 .intro{
@@ -22,7 +35,6 @@ body {
 p {
   color:white;
   font-size: 20px;
-  font-family: 'Heebo', sans-serif;
 }
 
 .topnav {
@@ -52,7 +64,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+      display: none;
+    }
   .topnav a.icon {
     float: right;
     display: block;
@@ -87,12 +101,15 @@ background-size: cover;
 .container>h1{
     margin-left: 2rem;
     font-size: 4.7rem;
-    
+    font-family: 'Noto Serif SC', serif;
 }
+
 .SectionB{
+    font-family: 'Noto Serif SC', serif;
+    text-align: center;
+    float: center;
   position: relative;
     height: 400px;
-   font-family: 'Heebo', sans-serif;
     background: linear-gradient(319deg,#BDC0BA,#B9887D,#70649A,#7DB9DE);
 background-size: 800% 800%;
 
@@ -120,6 +137,8 @@ animation: AnimationName 15s ease-in-out infinite;
 }
 
 .button {
+  text-align: center;
+  float: center;
   border: none;
   color: white;
   padding: 12px 28px;
@@ -132,7 +151,6 @@ animation: AnimationName 15s ease-in-out infinite;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 10px;
-      float:center;
 
 }
 
@@ -164,22 +182,23 @@ animation: AnimationName 15s ease-in-out infinite;
     text-align: center;
 }
 
-.Hireme{
-background: url('cube1.jpg');
-background-size: cover;
-background-repeat: no-repeat;
- height:500px;
- text-align: right;
-    font-size:2rem; 
+.ending{
+    display: grid;
+    grid-column: 50% 50%;
 }
-
-.Hireme .whymebox{  
-float: right;
-width: 400px;
-padding-right:15%;
-margin-right: 150px;
-filter: drop-shadow(30px 10px 4px grey);
-
+.pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 44%;
+    margin-top: 5%;
+    background-image: url("5.jpg");
+    background-size: contain;
+    border-radius: 100px;
+}
+.endwords{
+    text-align: center;
+font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
 }
 
 .service>h3{
@@ -391,15 +410,6 @@ button.accordion:hover, button.accordion.is-open {
     padding-bottom: 20px;
 }
 
-#logo1{
-    background-image: url('Ten-logo.png');
-    width: 30;
-    height: 120;
-}
-
-#logo2{
-    background-image: url('nuc-logo.jpg');
-}
 
 
 .footer>h5{
@@ -524,12 +534,23 @@ background-image: url(2-2.png);
  font-size: 1.8rem;
     
     }
-.Hireme{
-background: url('cube-2.png');
-background-size: cover;
-
-    
+    .pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+    margin-top: 40px;
+    background-image: url("5.jpg");
+    background-size: contain;
+    border-radius: 100px;
 }
+.endwords{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+}
+
 
     .boxesc {
     margin-top: 50px;
@@ -542,13 +563,6 @@ background-size: cover;
 }
 
 
-.whymebox>h2{  
-float: left;
-width: 450px;
-margin-left: 110px;
-font-size: 20px;
-
-}
 .boxc>h2{
 font-size: 25px;
 font-family: 'Anton', sans-serif;
@@ -571,14 +585,6 @@ font-family: 'Anton', sans-serif;
   border-radius: 15px;
   margin-top: 23px;;
 
-}{
-    background-color: black;
-  text-decoration: none;
-  color: white;
-  border-radius: .25rem;
-  text-align: center;
-  display: inline-block;
-  transition: all .3s;
 }
 
 .breweries > ul {
