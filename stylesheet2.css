@@ -26,12 +26,6 @@ a:hover {
 }
 
 
-.intro{
-  position: relative;
-  top: 100px;
-  text-align:center;
-}
-
 p {
   color:white;
   font-size: 20px;
@@ -170,16 +164,21 @@ animation: AnimationName 15s ease-in-out infinite;
 
 
 .Intro{
-    width:500px;
-    text-align: center;
-   color: whitesmoke;
-    padding-left: 35%;
-    padding-top: 5%;
+  position: relative;
+  top: 10%;
+  text-align:center;
+    color:white;
+    padding-top: 3%;
 }
 
 .Intro>h2{
-    font-size: 50px;
-    text-align: center;
+
+    font-size: 3rem;
+}
+
+
+.Intro>h4{
+    font-size: 1rem;
 }
 
 .ending{
@@ -429,22 +428,41 @@ button.accordion:hover, button.accordion.is-open {
 
 }
 
-@media(max-width: 414px) {
-  .container {
+@media(max-width: 1028px) {
+  h1 {
+    font-size: 4rem;
+  }
+    
+        .pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 42%;
+    margin-top: 40px;
+    background-image: url("5.jpg");
+    background-size: contain;
+    border-radius: 100px;
+}
+
+}
+
+@media(max-width: 768px) {
+  h1 {
+      font-size: 3rem;
+    }
+      
+    .pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 38%;
+    margin-top: 40px;
+    background-image: url("5.jpg");
+    background-size: contain;
+    border-radius: 100px;
+}
   }
 
- 
-    
-     .container {
-background: #333 url('cube-2.png');
-background-repeat: no-repeat;
-background-size: cover;
 
-}
-   
-}
-
-@media(max-width: 375px) {
+@media(max-width: 414px) {
 .container {
 height: 500px;
 background-image: url(2-2.png);
@@ -458,23 +476,27 @@ background-image: url(2-2.png);
     }
 
 .Intro{
-  position: relative;
-  top: 10%;
-  text-align:center;
-    color:white;
-    padding-top: 3%;
+    width:380px;
+   text-align: center;
+   color: whitesmoke;
+   padding-left: 0;
+    padding-right: 0;
+    padding-top: 15%;
 }
 
 .Intro>h2{
-
-    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-align: center;
+       padding-left: 0;
 }
-
 
 .Intro>h4{
-    font-size: 1rem;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0;
 }
- 
+    
     
     .button {
   border: none;
@@ -530,23 +552,6 @@ background-image: url(2-2.png);
  font-size: 1.8rem;
     
     }
-    .pic{
-    width: 200px;
-    height: 200px;
-    margin-left: 80px;
-    margin-top: 40px;
-    background-image: url("5.jpg");
-    background-size: contain;
-    border-radius: 100px;
-}
-.endwords{
-    text-align: center;
-    font-size: 0.8rem;
-}
-
-
-}
-
 
     .boxesc {
     margin-top: 50px;
@@ -564,8 +569,21 @@ font-size: 25px;
 font-family: 'Anton', sans-serif;
 }
 
-
+    .pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+    margin-top: 40px;
+    background-image: url("5.jpg");
+    background-size: contain;
+    border-radius: 100px;
 }
+.endwords{
+    text-align: center;
+font-family: 'Caveat', cursive;
+    font-size: 0.9rem;
+}
+
 
 }
 
