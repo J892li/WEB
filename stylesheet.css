@@ -298,7 +298,7 @@ padding-top: 1px;
     height: 200px;
     margin-left: 44%;
     margin-top: 5%;
-    background-image: url("5.jpg");
+    background-image: url("me-1.jpg");
     background-size: contain;
     border-radius: 100px;
 }
@@ -477,7 +477,7 @@ button.accordion:hover, button.accordion.is-open {
     height: 200px;
     margin-left: 42%;
     margin-top: 40px;
-    background-image: url("5.jpg");
+    background-image: url("me-1.jpg");
     background-size: contain;
     border-radius: 100px;
 }
@@ -494,7 +494,7 @@ button.accordion:hover, button.accordion.is-open {
     height: 200px;
     margin-left: 38%;
     margin-top: 40px;
-    background-image: url("5.jpg");
+    background-image: url("me-1.jpg");
     background-size: contain;
     border-radius: 100px;
 }
@@ -613,7 +613,7 @@ font-family: 'Anton', sans-serif;
     height: 200px;
     margin-left: 80px;
     margin-top: 40px;
-    background-image: url("5.jpg");
+    background-image: url("me-1.jpg");
     background-size: contain;
     border-radius: 100px;
 }
