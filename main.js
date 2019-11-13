@@ -1,92 +1,95 @@
+// TypeWriter function credit to https://www.youtube.com/watch?v=POX3dT-pB4E 
+
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
-    this.txtElement = txtElement;
+    this.txtElement = txtElement;  // load text
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
     this.wait = parseInt(wait, 10);
     this.type();
-    this.isDeleting = false;
+    this.isDeleting = false;   // delet text
   }
 
     
   type() {
-    // Current index of word
+    //  the current index of word
     const current = this.wordIndex % this.words.length;
-    // Get full text of current word
+    // print full text
     const fullTxt = this.words[current];
 
-    // Check if deleting
+    // if it is deleting index -1
     if(this.isDeleting) {
       // Remove char
       this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
-      // Add char
+      //  if it is deleting index text +1
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    // Insert txt into element
+    // add txt into element
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-    // Initial Type Speed
+    // Type Speed
     let typeSpeed = 300;
 
     if(this.isDeleting) {
       typeSpeed /= 2;
     }
 
-    // If word is complete
+    // when the text is complete
     if(!this.isDeleting && this.txt === fullTxt) {
-      // Make pause at end
+      // wait a bit
       typeSpeed = this.wait;
-      // Set delete to true
+      // then delete the text
       this.isDeleting = true;
     } else if(this.isDeleting && this.txt === '') {
       this.isDeleting = false;
-      // Move to next word
+      // index jump to next word
       this.wordIndex++;
-      // Pause before start typing
+      // wait a bit
       typeSpeed = 500;
     }
-
+  // timer
     setTimeout(() => this.type(), typeSpeed);
   }
 }
 
 
-// Init On DOM Load
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);  //initialization
 
-// Init App
+// load new text typer
 function init() {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
-  // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+//credit to https://stackoverflow.com/questions/48673434/accordion-menu-wondering
 var accordions = document.getElementsByClassName("accordion");
 
-for (var i = 0; i < accordions.length; i++) {
+for (var i = 0; i < accordions.length; i=i+1) {
   accordions[i].onclick = function() {
     this.classList.toggle('is-open');
 
     var content = this.nextElementSibling;
     if (content.style.maxHeight) {
-      // accordion is currently open, so close it
+      //if accordion is open, close it
       content.style.maxHeight = null;
     } else {
-      // accordion is currently closed, so open it
+      // if accordion closed, add a height to open it
       content.style.maxHeight = content.scrollHeight + "px";
     }
   }
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+// credit to https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+function navFunction() {
+  var x = document.getElementById("navtop");
+  if (x.className === "nav") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "nav";
   }
 }
